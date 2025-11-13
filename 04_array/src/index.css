@@ -1,0 +1,90 @@
+/* Parent container — multiple cards ke liye */
+.main {
+  display: flex;
+  flex-wrap: wrap;         /* cards wrap honge */
+  gap: 20px;               /* cards ke beech gap */
+  justify-content: center; /* center me cards align honge */
+  padding: 20px;
+  background: #f8fafc;
+}
+
+/* Single card design */
+.job-card {
+  width: 300px;             /* fixed width so they come side by side */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header (logo + save icon) */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.save {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Body */
+.job-body h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.job-body p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 6px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Footer */
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.apply-btn {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
